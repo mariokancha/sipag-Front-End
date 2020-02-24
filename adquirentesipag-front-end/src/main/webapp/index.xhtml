@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+    <title>Sipag Comércio</title>
+</h:head>
+
+<h:body>
+    <h:form>
+        <h:link value="Novo Comércio" outcome="editarCommerce">
+        </h:link>
+    <p:dataTable var="commerce" value="#{commerceBean.commerces}">
+        <p:column>
+            <f:facet name="header">
+                <h:outputText value="Id"/>
+            </f:facet>
+            <h:outputText value="#{commerce.idCommerce}"/>
+        </p:column>
+        <p:column>
+            <f:facet name="header">
+                <h:outputText value="Nome"/>
+            </f:facet>
+            <h:outputText value="#{commerce.nome}"/>
+        </p:column>
+        <p:column>
+            <f:facet name="header">
+                <h:outputText value="CNPJ"/>
+            </f:facet>
+            <h:outputText value="#{commerce.cnpj}"/>
+        </p:column>
+        <p:column>
+            <f:facet name="header">
+                <h:outputText value="CEP"/>
+            </f:facet>
+            <h:outputText value="#{commerce.cep}"/>
+        </p:column>
+        <p:column>
+            <f:facet name="header">
+                <h:outputText value="LOGRADOURO"/>
+            </f:facet>
+            <h:outputText value="#{commerce.logradouro}"/>
+        </p:column>
+        <p:column>
+            <f:facet name="header">
+                <h:outputText value="BAIRRO"/>
+            </f:facet>
+            <h:outputText value="#{commerce.bairro}"/>
+        </p:column>
+        <p:column>
+            <f:facet name="header">
+                <h:outputText value="CIDADE"/>
+            </f:facet>
+            <h:outputText value="#{commerce.cidade}"/>
+        </p:column>
+        <p:column>
+            <f:facet name="header">
+                <h:outputText value="UF"/>
+            </f:facet>
+            <h:outputText value="#{commerce.uf}"/>
+        </p:column>
+        <p:column>
+            <f:facet name="header">
+                <h:outputText value="COMPLEMENTO"/>
+            </f:facet>
+            <h:outputText value="#{commerce.complemento}"/>
+        </p:column>
+        <p:column>
+            <f:facet name="header">
+                <h:outputText value="EMAIL"/>
+            </f:facet>
+            <h:outputText value="#{commerce.email}"/>
+        </p:column>
+        <p:column>
+            <f:facet name="header">
+                <h:outputText value="(CEL)TELEFONE"/>
+            </f:facet>
+            <h:outputText value="#{commerce.foneCelular}"/>
+        </p:column>
+        <p:column>
+            <f:facet name="header">
+                <h:outputText value="(TEL)COMERCIAL"/>
+            </f:facet>
+            <h:outputText value="#{commerce.foneComercial}"/>
+        </p:column>
+        <p:column>
+            <f:facet name="header">
+                <h:outputText value="(TEL)RESIDENCIAL"/>
+            </f:facet>
+            <h:outputText value="#{commerce.foneResidencial}"/>
+        </p:column>
+        <p:column>
+            <f:facet name="header">
+                <h:outputText value="Ações"/>
+            </f:facet>
+            <h:link value="Editar" outcome="editarCommerce">
+                <f:param name="id" value="#{commerce.idCommerce}" />
+            </h:link>
+        </p:column>
+    </p:dataTable>
+    </h:form>
+</h:body>
+</html>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+
+
+<f:metadata>
+    <f:viewParam name="id" value="#{commerceBean.id}" />
+    <f:event type="preRenderView" listener="#{commerceBean.initDetalhes}" />
+</f:metadata>
+
+<h:head>
+    <title>Sipag - Comércios</title>
+</h:head>
+<h:body>
+    <h:form>
+        <h:panelGroup>
+            <p:outputLabel for="idCommerce" value="Id: "/>
+            <h:inputText id="idCommerce" value="#{commerceBean.commerce.idCommerce}"/>
+        </h:panelGroup>
+        <br></br>
+        <h:panelGroup>
+            <p:outputLabel for="nome" value="Nome: "/>
+            <h:inputText id="nome" value="#{commerceBean.commerce.nome}"/>
+        </h:panelGroup>
+        <br></br>
+        <h:panelGroup>
+            <p:outputLabel for="cnpj" value="CNPJ: "/>
+            <h:inputText id="cnpj" value="#{commerceBean.commerce.cnpj}"/>
+        </h:panelGroup>
+        <br></br>
+        <h:panelGroup>
+            <p:outputLabel for="cep" value="CEP: "/>
+            <h:inputText id="cep" value="#{commerceBean.commerce.cep}"/>
+        </h:panelGroup>
+        <br></br>
+        <h:panelGroup>
+            <p:outputLabel for="logradouro" value="LOGRADOOURO: "/>
+            <h:inputText id="logradouro" value="#{commerceBean.commerce.logradouro}"/>
+        </h:panelGroup>
+        <br></br>
+        <h:panelGroup>
+            <p:outputLabel for="bairro" value="BAIRRO: "/>
+            <h:inputText id="bairro" value="#{commerceBean.commerce.bairro}"/>
+        </h:panelGroup>
+        <br></br>
+        <h:panelGroup>
+            <p:outputLabel for="cidade" value="CIDADE: "/>
+            <h:inputText id="cidade" value="#{commerceBean.commerce.cidade}"/>
+        </h:panelGroup>
+        <br></br>
+        <h:panelGroup>
+            <p:outputLabel for="uf" value="UF: "/>
+            <h:inputText id="uf" value="#{commerceBean.commerce.uf}"/>
+        </h:panelGroup>
+        <br></br>
+        <h:panelGroup>
+            <p:outputLabel for="complemento" value="COMPLEMENTO: "/>
+            <h:inputText id="complemento" value="#{commerceBean.commerce.complemento}"/>
+        </h:panelGroup>
+        <br></br>
+        <h:panelGroup>
+            <p:outputLabel for="email" value="EMAIL: "/>
+            <h:inputText id="email" value="#{commerceBean.commerce.email}"/>
+        </h:panelGroup>
+        <br></br>
+        <h:panelGroup>
+            <p:outputLabel for="foneCelular" value="(CEL)TELEFONE: "/>
+            <h:inputText id="foneCelular" value="#{commerceBean.commerce.foneCelular}"/>
+        </h:panelGroup>
+        <br></br>
+        <h:panelGroup>
+            <p:outputLabel for="foneComercial" value="(TEL)COMERCIAL: "/>
+            <h:inputText id="foneComercial" value="#{commerceBean.commerce.foneComercial}"/>
+        </h:panelGroup>
+        <br></br>
+        <h:panelGroup>
+            <p:outputLabel for="foneResidencial" value="(TEL)RESIDENCIAL: "/>
+            <h:inputText id="foneResidencial" value="#{commerceBean.commerce.foneResidencial}"/>
+        </h:panelGroup>
+        <h:commandButton value="Salvar" action="#{commerceBean.editar()}"></h:commandButton>
+    </h:form>
+</h:body>
+</html>
