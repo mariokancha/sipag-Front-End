@@ -84,3 +84,12 @@
 0:0:0:0:0:0:0:1 - - [24/Feb/2020:18:21:41 -0300] "GET /commerce/editarCommerce.xhtml?id=1 HTTP/1.1" 200 3386 http-bio-9090-exec-3 18
 0:0:0:0:0:0:0:1 - - [24/Feb/2020:18:21:48 -0300] "GET /commerce/editarCommerce.xhtml?id= HTTP/1.1" 200 3116 http-bio-9090-exec-3 16
 0:0:0:0:0:0:0:1 - - [24/Feb/2020:18:21:55 -0300] "POST /commerce/editarCommerce.xhtml HTTP/1.1" 500 4594 http-bio-9090-exec-3 10
+0:0:0:0:0:0:0:1 - - [24/Feb/2020:18:26:41 -0300] "GET /commerce HTTP/1.1" 302 - http-bio-9090-exec-2 0
+0:0:0:0:0:0:0:1 - - [24/Feb/2020:18:26:42 -0300] "GET /commerce/ HTTP/1.1" 200 5777 http-bio-9090-exec-3 929
+0:0:0:0:0:0:0:1 - - [24/Feb/2020:18:26:45 -0300] "GET /commerce/editarCommerce.xhtml HTTP/1.1" 200 3119 http-bio-9090-exec-4 203
+0:0:0:0:0:0:0:1 - - [24/Feb/2020:18:26:55 -0300] "POST /commerce/editarCommerce.xhtml HTTP/1.1" 500 4402 http-bio-9090-exec-5 60
+0:0:0:0:0:0:0:1 - - [24/Feb/2020:18:27:44 -0300] "POST /commerce/editarCommerce.xhtml HTTP/1.1" 200 6409 http-bio-9090-exec-10 163
+0:0:0:0:0:0:0:1 - - [24/Feb/2020:18:27:59 -0300] "GET /commerce/editarCommerce.xhtml?id=1 HTTP/1.1" 200 3378 http-bio-9090-exec-10 124
+0:0:0:0:0:0:0:1 - - [24/Feb/2020:18:28:01 -0300] "POST /commerce/editarCommerce.xhtml HTTP/1.1" 200 6409 http-bio-9090-exec-10 106
+0:0:0:0:0:0:0:1 - - [24/Feb/2020:18:28:05 -0300] "GET /commerce/editarCommerce.xhtml HTTP/1.1" 200 3118 http-bio-9090-exec-10 78
+0:0:0:0:0:0:0:1 - - [24/Feb/2020:18:28:18 -0300] "POST /commerce/editarCommerce.xhtml HTTP/1.1" 200 7042 http-bio-9090-exec-10 124
